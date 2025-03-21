@@ -19,7 +19,7 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.10",
     "@eslint/eslintrc": "^3",
-    "@opennextjs/cloudflare": "^0.5.12",
+    "@opennextjs/cloudflare": "^0.2.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

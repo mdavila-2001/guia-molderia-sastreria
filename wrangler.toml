@@ -1,5 +1,4 @@
-name = "guia-molderia-sastreria"
-compatibility_date = "2023-12-01"
+name = "guiamolderiaysastreria"
+compatibility_date = "2025-03-21"
 
-[build]
-command = "npm run build"
+compatibility_flags = ["nodejs_compat"]

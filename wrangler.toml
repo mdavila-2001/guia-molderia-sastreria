@@ -1,17 +1,9 @@
 name = "guiaparamolderiaysastreria"
-compatibility_date = "2023-12-01"
+compatibility_date = "2025-03-21"
 
 [build]
 command = "npm run build"
 
 [pages]
-pages_build_output_dir = ".next"
-
-[site]
-bucket = ".next"
-
-[env.production]
-workers_dev = true
-
-[build.upload]
-format = "service-worker"
+pages_build_output_dir = ".vercel/output/static"
+compatibility_flags = ["nodejs_compat"]

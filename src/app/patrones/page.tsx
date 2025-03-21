@@ -8,8 +8,8 @@ export default function Patrones() {
     <div className={styles.container}>
       <h1 className={styles.title}>Patrones Base y Variaciones</h1>
 
-      <section className={styles.section}>
-        <h2>Patrón Base de Cuerpo</h2>
+      <section className={styles.section} aria-labelledby="patron-cuerpo">
+        <h2 id="patron-cuerpo">Patrón Base de Cuerpo</h2>
         <div className={styles.content}>
           <div className={styles.patternCard}>
             <div className={styles.imageContainer}>

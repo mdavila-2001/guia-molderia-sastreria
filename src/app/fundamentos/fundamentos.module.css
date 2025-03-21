@@ -1,0 +1,153 @@
+/* Estilos generales */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Título principal */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Secciones */
+.section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+  transform: scale(1.01);
+}
+
+/* Encabezados dentro de las secciones */
+.section h2 {
+  color: #34495e;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+
+/* Contenido de las secciones */
+.content {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Listas */
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content li:last-child {
+  border-bottom: none;
+}
+
+/* Agregar un icono antes de cada ítem de lista */
+.content li::before {
+  content: "✔";
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Párrafos */
+.content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Estilos específicos para la nota */
+.note {
+  font-style: italic;
+  color: #8e44ad;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: rgba(142, 68, 173, 0.1);
+  border-left: 5px solid #8e44ad;
+  border-radius: 4px;
+}
+
+/* Contenedor de la tabla */
+.tableContainer {
+  overflow-x: auto;
+  margin: 1rem 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.1);
+}
+
+/* Estilos de la tabla de medidas */
+.measureTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.measureTable th,
+.measureTable td {
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid #e8f2f9;
+}
+
+.measureTable th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.measureTable td:first-child {
+  background-color: #f8fafc;
+  font-weight: 600;
+  text-align: left;
+  color: #2c3e50;
+}
+
+.measureTable tr:nth-child(even) {
+  background-color: #f7fbfe;
+}
+
+.measureTable tr:hover {
+  background-color: #e8f2f9;
+}
+
+/* Responsive para la tabla */
+@media (max-width: 768px) {
+  .tableContainer {
+    margin: 0 -1rem;
+    border-radius: 0;
+  }
+  
+  .measureTable {
+    font-size: 0.85rem;
+  }
+  
+  .measureTable th,
+  .measureTable td {
+    padding: 0.5rem;
+  }
+}

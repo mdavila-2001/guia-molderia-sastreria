@@ -1,0 +1,330 @@
+/* Estilos generales */
+.container {
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 0 3rem;
+}
+
+/* Título principal */
+.title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #2c3e50;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+/* Secciones */
+.section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+  transform: scale(1.01);
+}
+
+/* Encabezados dentro de las secciones */
+.section h2 {
+  color: #34495e;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  border-left: 6px solid #3498db;
+  padding-left: 20px;
+  letter-spacing: -0.3px;
+}
+
+/* Contenido de las secciones */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Tarjetas de patrones */
+.patternCard {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(52, 152, 219, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0;
+}
+
+.patternCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+.patternCard h3 {
+  color: #3498db;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #e8f2f9;
+  letter-spacing: -0.2px;
+}
+
+/* Contenedor de imágenes */
+.imageContainer {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.patternImage {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+}
+
+.imageContainer:hover .patternImage {
+  transform: scale(1.05);
+}
+
+/* Listas */
+.patternCard ul,
+.patternCard ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.patternCard li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e8f2f9;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  line-height: 1.5;
+}
+
+.patternCard li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.patternCard li:first-child {
+  padding-top: 0;
+}
+
+/* Iconos para diferentes tipos de listas */
+.patternCard ul li::before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 0;
+}
+
+.patternCard ol {
+  counter-reset: pattern-steps;
+}
+
+.patternCard ol li {
+  counter-increment: pattern-steps;
+}
+
+.patternCard ol li::before {
+  content: counter(pattern-steps);
+  min-width: 32px;
+  height: 32px;
+  background: #3498db;
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Variaciones de patrones */
+.variations li {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+.variations li:first-child {
+  padding-top: 0;
+}
+
+.variations li:last-child {
+  padding-bottom: 0;
+}
+
+.variationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.variationName {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  letter-spacing: -0.2px;
+}
+
+.variationDesc {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+.variationImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #e8f2f9;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.variationImage:hover {
+  transform: scale(1.1);
+  border-color: #3498db;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    padding: 0 2.5rem;
+  }
+
+  .section {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    margin: 2rem auto;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .patternCard {
+    margin-bottom: 0;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .section {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-left: 15px;
+  }
+
+  .imageContainer {
+    height: 280px;
+  }
+
+  .variationImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .patternCard h3 {
+    font-size: 1.4rem;
+  }
+
+  .patternCard li {
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+  }
+
+  .variationName {
+    font-size: 1.2rem;
+  }
+
+  .variationDesc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .imageContainer {
+    height: 240px;
+  }
+
+  .patternCard {
+    padding: 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .variationImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .patternCard li {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    gap: 12px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    padding-left: 12px;
+    border-left-width: 4px;
+  }
+}

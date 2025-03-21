@@ -44,7 +44,7 @@ export default function Patrones() {
             </ol>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/patrones/construccion-cuerpo.png"
+                src="/images/cuerpo/construccion-cuerpo.png"
                 alt="Pasos de construcción del patrón de cuerpo"
                 width={400}
                 height={300}
@@ -60,7 +60,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Princesa</span>
                   <Image
-                    src="/images/patrones/variacion-princesa.png"
+                    src="/images/cuerpo/princesa.png"
                     alt="Variación princesa"
                     width={100}
                     height={100}
@@ -73,7 +73,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Imperio</span>
                   <Image
-                    src="/images/patrones/variacion-imperio.png"
+                    src="/images/cuerpo/imperio.png"
                     alt="Variación imperio"
                     width={100}
                     height={100}
@@ -86,7 +86,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Asimétrico</span>
                   <Image
-                    src="/images/patrones/variacion-asimetrico.png"
+                    src="/images/cuerpo/asimetrico.png"
                     alt="Variación asimétrica"
                     width={100}
                     height={100}
@@ -106,7 +106,7 @@ export default function Patrones() {
           <div className={styles.patternCard}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/patrones/patron-manga.png"
+                src="/images/mangas/patron-manga.png"
                 alt="Patrón base de manga"
                 width={400}
                 height={300}
@@ -132,7 +132,7 @@ export default function Patrones() {
             </ol>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/patrones/construccion-manga.png"
+                src="/images/mangas/construccion-manga.png"
                 alt="Pasos de construcción del patrón de manga"
                 width={400}
                 height={300}
@@ -148,7 +148,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Ranglan</span>
                   <Image
-                    src="/images/patrones/variacion-ranglan.png"
+                    src="/images/mangas/ranglan.png"
                     alt="Variación ranglan"
                     width={100}
                     height={100}
@@ -161,7 +161,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Jamón</span>
                   <Image
-                    src="/images/patrones/variacion-jamon.png"
+                    src="/images/mangas/jamon.png"
                     alt="Variación jamón"
                     width={100}
                     height={100}
@@ -174,7 +174,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Obispo</span>
                   <Image
-                    src="/images/patrones/variacion-obispo.png"
+                    src="/images/mangas/obispo.png"
                     alt="Variación obispo"
                     width={100}
                     height={100}

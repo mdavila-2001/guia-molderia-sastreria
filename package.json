@@ -1,15 +1,12 @@
 {
-  "name": "guiaparamolderiaysastreria",
+  "name": "guia-para-molderia-ysastreria",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "opennextjs-cloudflare && wrangler deploy",
-    "preview": "opennextjs-cloudflare && wrangler dev",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.2.3",
@@ -17,15 +14,11 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.10",
-    "@eslint/eslintrc": "^3",
-    "@opennextjs/cloudflare": "^0.2.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
-    "typescript": "^5",
-    "wrangler": "^4.3.0"
+    "typescript": "^5"
   }
 }

@@ -6,4 +6,3 @@ command = "npm run build"
 
 [pages]
 pages_build_output_dir = ".vercel/output/static"
-compatibility_flags = ["nodejs_compat"]

@@ -14,7 +14,7 @@ export default function Patrones() {
           <div className={styles.patternCard}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/patrones/patron-cuerpo.png"
+                src="/images/cuerpo/patron-cuerpo.png"
                 alt="Patrón base de cuerpo"
                 width={400}
                 height={300}
@@ -194,7 +194,7 @@ export default function Patrones() {
           <div className={styles.patternCard}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/patrones/patron-falda.png"
+                src="/images/faldas/patron-falda.png"
                 alt="Patrón base de falda"
                 width={400}
                 height={300}
@@ -220,7 +220,7 @@ export default function Patrones() {
             </ol>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/patrones/construccion-falda.png"
+                src="/images/faldas/construccion-falda.png"
                 alt="Pasos de construcción del patrón de falda"
                 width={400}
                 height={300}
@@ -236,7 +236,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Evasé</span>
                   <Image
-                    src="/images/patrones/variacion-evase.png"
+                    src="/images/faldas/evase.png"
                     alt="Variación evasé"
                     width={100}
                     height={100}
@@ -249,7 +249,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Plisada</span>
                   <Image
-                    src="/images/patrones/variacion-plisada.png"
+                    src="/images/faldas/plisadas.png"
                     alt="Variación plisada"
                     width={100}
                     height={100}
@@ -262,7 +262,7 @@ export default function Patrones() {
                 <div className={styles.variationHeader}>
                   <span className={styles.variationName}>Godets</span>
                   <Image
-                    src="/images/patrones/variacion-godets.png"
+                    src="/images/faldas/godets.png"
                     alt="Variación godets"
                     width={100}
                     height={100}

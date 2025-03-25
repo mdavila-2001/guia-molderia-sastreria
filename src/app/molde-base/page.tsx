@@ -1,64 +1,115 @@
 import styles from './molde-base.module.css';
 
-export const runtime = "edge";
-
-export default function MoldeBasePage() {
+export default function MoldeBase() {
   return (
-    <main className={styles.container}>
-      <h1 className={styles.title}>Guía Molde Cuerpo Base</h1>
-
-      <section className={styles.prerequisitos}>
-        <h2>Prerrequisitos:</h2>
-        <p>
-          Usaremos las siguientes medidas para crear nuestro molde de cuerpo base:{" "}
-          <strong>
-            contorno de busto, primer contorno de cadera, segundo contorno de cadera, segundo alto de cadera,
-            contorno de escote, altura de busto, talle delantero, talle trasero, ancho de espalda, ancho de hombro,
-            separación del busto y alto de sisa.
-          </strong>
-        </p>
-      </section>
-
-      <section className={styles.tableContainer}>
-        <h2>Tabla de Medidas</h2>
-        <div className={styles.tableWrapper}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Medida</th>
-                <th>S</th>
-                <th>M</th>
-                <th>L</th>
-                <th>XL</th>
-                <th>XXL</th>
-                <th>XXXL</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Contorno de busto</td><td>92</td><td>96</td><td>100</td><td>104</td><td>108</td><td>112</td></tr>
-              <tr><td>Contorno de cintura</td><td>62</td><td>64</td><td>68</td><td>74</td><td>78</td><td>82</td></tr>
-              <tr><td>1er ancho de cadera</td><td>92</td><td>94</td><td>98</td><td>104</td><td>110</td><td>116</td></tr>
-              <tr><td>2do ancho de cadera</td><td>25</td><td>25</td><td>26</td><td>27</td><td>28</td><td>30</td></tr>
-              <tr><td>Escote</td><td>8</td><td>8</td><td>8.5</td><td>9</td><td>9.5</td><td>9.5</td></tr>
-              <tr><td>Alto de busto</td><td>22</td><td>22</td><td>23</td><td>23</td><td>24</td><td>24</td></tr>
-              <tr><td>Talle delantero</td><td>43</td><td>43</td><td>43</td><td>45</td><td>48</td><td>48</td></tr>
-              <tr><td>Talle trasero</td><td>43</td><td>43</td><td>43</td><td>45</td><td>48</td><td>48</td></tr>
-              <tr><td>Ancho tórax</td><td>35</td><td>36</td><td>38</td><td>40</td><td>42</td><td>42</td></tr>
-              <tr><td>Separación de busto</td><td>18</td><td>18</td><td>18</td><td>19</td><td>20</td><td>20</td></tr>
-              <tr><td>Alto sisa</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td></tr>
-              <tr><td>Ancho espalda</td><td>36</td><td>36</td><td>37</td><td>39</td><td>40</td><td>42</td></tr>
-              <tr><td>Ancho hombro</td><td>12</td><td>12</td><td>12</td><td>13</td><td>14</td><td>14</td></tr>
-              <tr><td>Alto codo</td><td>34</td><td>35</td><td>35</td><td>34</td><td>33</td><td>33</td></tr>
-              <tr><td>Largo manga</td><td>58</td><td>60</td><td>58</td><td>56</td><td>56</td><td>56</td></tr>
-              <tr><td>Largo total</td><td>110</td><td>110</td><td>108</td><td>106</td><td>104</td><td>104</td></tr>
-            </tbody>
-          </table>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Molde Base</h1>
+      
+      <section className={styles.step}>
+        <h2>Paso 1: Rectángulos Base</h2>
+        <div className={styles.stepContent}>
+          <p>Inicialmente haremos dos rectángulos (delantero y trasero):</p>
+          <ul className={styles.instructions}>
+            <li>Tomaremos la medida más ancha de cintura para arriba (contorno de busto)</li>
+            <li>Esta medida la dividimos en cuatro para el ancho de ambos rectángulos</li>
+            <li>Para la altura nos fijamos en el talle delantero y trasero</li>
+            <li>Dejamos un margen de 4 a 5 cm que nos sirve para hacer correcciones</li>
+          </ul>
+          
+          <div className={styles.baseRectangles}>
+            <div className={styles.rectangleContainer}>
+              <div className={styles.titleContainer}>
+                <p>Delantero</p>
+              </div>
+              <div className={styles.rectangle}>
+                <div className={styles.measurements}>
+                  <span className={styles.vertical}>43cm</span>
+                  <span className={styles.horizontal}>23cm</span>
+                  <div className={styles.arrowVertical}></div>
+                  <div className={styles.arrowHorizontal}></div>
+                </div>
+              </div>
+            </div>
+            
+            <div className={styles.rectangleContainer}>
+              <div className={styles.titleContainer}>
+                <p>Trasero</p>
+              </div>
+              <div className={styles.rectangle}>
+                <div className={styles.measurements}>
+                  <span className={styles.vertical}>41cm</span>
+                  <span className={styles.horizontal}>23cm</span>
+                  <div className={styles.arrowVertical}></div>
+                  <div className={styles.arrowHorizontal}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.measureNote}>
+            <span className={styles.fraction}>
+              <span className={styles.numerator}>92</span>
+              <span className={styles.denominator}>4</span>
+            </span>
+            <span className={styles.equals}>=</span>
+            <span>23cm</span>
+          </div>
+          <div className={styles.alert}>
+            <strong>Ojo:</strong> La cintura <span className={styles.underline}>se debe mantener paralela en ambos moldes</span> y para eso agarramos <span className={styles.underline}>el talle más largo para la línea central (43 cm)</span> de la cintura y ya hecho esto a agarramos la cuarta parte de nuestro contorno (23 cm) y trazamos el ancho. Ahora sí trazamos el ancho de ambos rectángulos, pero antes <span className={styles.underline}>nos fijamos qué cada             rectángulo tanto el que va a ser el trasero como el delantero tenga sus medidas correspondientes en altura (o sea, las del talle delantero y el talle trasero)</span>.
+          </div>
         </div>
       </section>
-
-      <p className={styles.note}>
-        <em>Las medidas del contorno las dividiremos en cuatro y la altura la utilizaremos en medidas enteras.</em>
-      </p>
-    </main>
+      <section className={styles.step}>
+        <h2>Paso 2: Fórmulas para cuello y caída de hombro</h2>
+        <div className={styles.stepContent}>
+          <div className={styles.formulaContainer}>
+            <table className={styles.formulaTable}>
+              <tbody>
+                <tr className={styles.formulaRow}>
+                  <td>
+                    <div className={styles.fraction}>
+                      <span className={styles.numerator}>1</span>
+                      <span className={styles.denominator}>5</span>
+                    </div>
+                    <span>Contorno de cuello - 3</span>
+                  </td>
+                  <td>Alto de caída de hombro delantero</td>
+                </tr>
+                <tr className={styles.formulaRow}>
+                  <td>
+                    <div className={styles.fraction}>
+                      <span className={styles.numerator}>1</span>
+                      <span className={styles.denominator}>5</span>
+                    </div>
+                    <span>Contorno de cuello - 2</span>
+                  </td>
+                  <td>Ancho de cuello delantero</td>
+                </tr>
+                <tr className={styles.formulaRow}>
+                  <td>
+                    <div className={styles.fraction}>
+                      <span className={styles.numerator}>1</span>
+                      <span className={styles.denominator}>5</span>
+                    </div>
+                    <span>Contorno de cuello - 1 +2 cm superiores</span>
+                  </td>
+                  <td>Ancho de cuello trasero</td>
+                </tr>
+                <tr className={styles.formulaRow}>
+                  <td>
+                    <div className={styles.fraction}>
+                      <span className={styles.numerator}>1</span>
+                      <span className={styles.denominator}>5</span>
+                    </div>
+                    <span>Contorno de cuello</span>
+                  </td>
+                  <td>Alto de cuello delantero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

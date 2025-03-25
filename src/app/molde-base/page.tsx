@@ -62,52 +62,56 @@ export default function MoldeBase() {
       <section className={styles.step}>
         <h2>Paso 2: Fórmulas para cuello y caída de hombro</h2>
         <div className={styles.stepContent}>
-          <div className={styles.formulaContainer}>
-            <table className={styles.formulaTable}>
-              <tbody>
-                <tr className={styles.formulaRow}>
-                  <td>
-                    <div className={styles.fraction}>
-                      <span className={styles.numerator}>1</span>
-                      <span className={styles.denominator}>5</span>
-                    </div>
-                    <span>Contorno de cuello - 3</span>
-                  </td>
-                  <td>Alto de caída de hombro delantero</td>
-                </tr>
-                <tr className={styles.formulaRow}>
-                  <td>
-                    <div className={styles.fraction}>
-                      <span className={styles.numerator}>1</span>
-                      <span className={styles.denominator}>5</span>
-                    </div>
-                    <span>Contorno de cuello - 2</span>
-                  </td>
-                  <td>Ancho de cuello delantero</td>
-                </tr>
-                <tr className={styles.formulaRow}>
-                  <td>
-                    <div className={styles.fraction}>
-                      <span className={styles.numerator}>1</span>
-                      <span className={styles.denominator}>5</span>
-                    </div>
-                    <span>Contorno de cuello - 1 +2 cm superiores</span>
-                  </td>
-                  <td>Ancho de cuello trasero</td>
-                </tr>
-                <tr className={styles.formulaRow}>
-                  <td>
-                    <div className={styles.fraction}>
-                      <span className={styles.numerator}>1</span>
-                      <span className={styles.denominator}>5</span>
-                    </div>
-                    <span>Contorno de cuello</span>
-                  </td>
-                  <td>Alto de cuello delantero</td>
-                </tr>
-              </tbody>
-            </table>
+          <p className={styles.diagramDescription}>
+            Luego usamos estas fórmulas con nuestra medida de contorno de cuello y con el resultado de cada una hacemos puntos y líneas guía con estas medidas.
+          </p>
+          <div className={styles.baseRectangles}>
+            <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.point} data-type="green"></div>
+                <div className={styles.point} data-type="purple"></div>
+                <div className={styles.line} data-type="green"></div>
+                <div className={styles.line} data-type="purple"></div>
+                <div className={styles.point} data-type="red"></div>
+                <div className={styles.line} data-type="red"></div>
+                <span className={styles.measureLabel} data-type="purple">6cm</span>
+                <span className={styles.measureLabel} data-type="red">5cm</span>
+                <span className={styles.measureLabel} data-type="green">3cm</span>
+              </div>
+            </div>
+                        
+            <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.point} data-type="blood"></div>
+                <div className={styles.line} data-type="blue"></div>
+                <div className={styles.line} data-type="blood"></div>
+                <div className={styles.point} data-type="blue"></div>
+                <span className={styles.measureLabel} data-type="blood">2cm</span>
+                <span className={styles.measureLabel} data-type="blue">7cm</span>
+              </div>
+            </div>
           </div>
+          <div className={styles.formulaTable}>
+              <div className={styles.tableHeader}>
+                Fórmula para cuello y caída de hombro
+              </div>
+              <div className={styles.tableRow}>
+                <div className={styles.formula}>8-3= 5 cm</div>
+                <div className={styles.description}>Alto de caída de hombro delantero</div>
+              </div>
+              <div className={styles.tableRow}>
+                <div className={styles.formula}>8-2= 6 cm</div>
+                <div className={styles.description}>Ancho de cuello delantero</div>
+              </div>
+              <div className={styles.tableRow}>
+                <div className={styles.formula}>8-1= 7 cm +2 cm superiores</div>
+                <div className={styles.description}>Ancho de cuello trasero</div>
+              </div>
+              <div className={styles.tableRow}>
+                <div className={styles.formula}>8 cm</div>
+                <div className={styles.description}>Alto de cuello delantero</div>
+              </div>
+            </div>
         </div>
       </section>
     </div>

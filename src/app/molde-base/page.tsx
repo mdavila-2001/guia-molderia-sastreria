@@ -76,7 +76,7 @@ export default function MoldeBase() {
                 <div className={styles.line} data-type="red"></div>
                 <span className={styles.measureLabel} data-type="purple">6cm</span>
                 <span className={styles.measureLabel} data-type="red">5cm</span>
-                <span className={styles.measureLabel} data-type="green">3cm</span>
+                <span className={styles.measureLabel} data-type="green">8cm</span>
               </div>
             </div>
                         
@@ -112,6 +112,32 @@ export default function MoldeBase() {
                 <div className={styles.description}>Alto de cuello delantero</div>
               </div>
             </div>
+            <p className={styles.diagramDescription}>
+              Luego unimos estos puntos con curvas de la siguiente manera:
+            </p>
+            <div className={styles.baseRectangles}>
+            <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.line} data-type="green-to-purple"></div>
+                <div className={styles.point} data-type="green"></div>
+                <div className={styles.point} data-type="purple"></div>
+                <div className={styles.line} data-type="green"></div>
+                <div className={styles.line} data-type="purple"></div>
+                <div className={styles.point} data-type="red"></div>
+                <div className={styles.line} data-type="red"></div>
+              </div>
+            </div>
+                        
+            <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.line} data-type="blood"></div>
+                <div className={styles.line} data-type="blue"></div>
+                <div className={styles.line} data-type="blood-curve-right"></div>
+                <div className={styles.point} data-type="blood"></div>
+                <div className={styles.point} data-type="blue"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

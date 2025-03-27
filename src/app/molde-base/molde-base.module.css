@@ -74,12 +74,6 @@
   margin: 20px;
 }
 
-/* Títulos de los rectángulos */
-.titleContainer {
-  width: 100%;
-  text-align: center;
-}
-
 .titleContainer p {
   font-weight: bold;
   color: #2d3748;
@@ -346,6 +340,25 @@
   background-color: #C00000;
 }
 
+.line {
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  transform-origin: top left;
+}
+
+.line[data-type="green-to-purple"] {
+  top: calc((8 / 43) * 100% + 2%);
+  left: -2px;
+  height: calc(100% - ((18.9/23) * 100%));
+  transform: rotate(-90deg);
+  border-radius: 0 0 0 100%;
+  transform-origin: top left;
+  width: 35.5%;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
 .point[data-type="red"] {
   top: calc(((8 / 43) * 100%) - 23.478px);
   left: -5px;
@@ -385,9 +398,28 @@
   width: 2px;
   height: 15.652px;
   background-color: #C00000;
-  right: calc((7.5/ 23) * 100%);
+  right: calc((7.35/ 23) * 100%);
   top: calc(-15px - 4px);
 }
+
+.line[data-type="blood-curve-right"] {
+  position: absolute;
+  width: 33%;
+  height: 6%;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 0 150% 0 0;
+  transform-origin: top right;
+  left: 35%;
+  top: 0%;
+  transform: rotate(-180deg);
+  border-left: none;
+  border-bottom: none;
+}
+
+
+
+
 
 .line[data-type="red"] {
   position: absolute;
@@ -432,4 +464,7 @@
   right: -15px;
   top: -20px;
   color: #3366ff;
+}
+.diagramDescription {
+  margin-top: 2rem;
 }

@@ -140,6 +140,23 @@ export default function MoldeBase() {
           </div>
         </div>
       </section>
+      <section className={styles.step}>
+        <h2>Paso 3: Ancho de Espalda</h2>
+        <div className={styles.stepContent}>
+          <p>En este paso utilizaremos la medida del ancho de espalda:</p>
+          <ul className={styles.instructions}>
+            <li>Dividimos la medida del ancho de espalda en dos partes</li>
+            <li>Aplicamos esta medida desde el centro de la espalda hacia adentro</li>
+            <li>Repetimos el mismo proceso para la parte delantera en los hombros</li>
+            <li>Utilizamos la línea del alto de caída de hombro delantera (5cm)</li>
+            <li>Para la altura de la línea de referencia usamos el alto de sisa</li>
+          </ul>
+          
+          <div className={styles.alert}>
+            <strong>Importante:</strong> La medida del ancho de espalda (36cm) se divide en dos partes iguales (18cm cada una) y se aplica simétricamente desde el centro hacia los costados, tanto en la parte trasera como en la delantera.
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

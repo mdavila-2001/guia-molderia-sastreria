@@ -196,7 +196,6 @@ export default function MoldeBase() {
                 <div className={styles.line} data-type="red"></div>
               </div>
             </div>
-                        
             <div className={styles.rectangleContainer}>
               <div className={styles.rectangle}>
                 <div className={styles.line} data-type="blood"></div>
@@ -212,6 +211,9 @@ export default function MoldeBase() {
               </div>
             </div>
           </div>
+          <p className={styles.diagramDescription}>
+            En el cuadrado que se forma por el cruce de ambas líneas  vamos a trabajar un <span className={styles.underline}>punto de referencia este será la mitad de ese cuadrado.</span> Luego uniremos el punto del borde superior de la curva del cuello hacia el punto de referencia en la mitad del cuadrado marcando otra línea con <span className={styles.underline}>la medida del ancho de hombro</span> en la parte delantera (en este caso 12cm)
+          </p>
           <div className={styles.alert}>
             <strong>Importante:</strong> La medida del ancho de espalda (36cm) se divide en dos partes iguales (18cm cada una) y se aplica simétricamente desde el centro hacia los costados, tanto en la parte trasera como en la delantera.
           </div>

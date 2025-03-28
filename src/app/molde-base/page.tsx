@@ -1,4 +1,5 @@
 import styles from './molde-base.module.css';
+import Table from '../components/Table';
 
 export default function MoldeBase() {
   return (
@@ -47,12 +48,22 @@ export default function MoldeBase() {
           </div>
           
           <div className={styles.measureNote}>
-            <span className={styles.fraction}>
-              <span className={styles.numerator}>92</span>
-              <span className={styles.denominator}>4</span>
-            </span>
-            <span className={styles.equals}>=</span>
-            <span>23cm</span>
+            <Table
+              headers={['Medida', 'Valor (cm)']}
+              rows={[
+                ['Contorno de busto', '92'],
+                ['Talle delantero', '43'],
+                ['Talle trasero', '41']
+              ]}
+            />
+            <div className={styles.calculationGroup}>
+              <span className={styles.fraction}>
+                <span className={styles.numerator}>92</span>
+                <span className={styles.denominator}>4</span>
+              </span>
+              <span className={styles.equals}>=</span>
+              <span>23cm</span>
+            </div>
           </div>
           <div className={styles.alert}>
             <strong>Ojo:</strong> La cintura <span className={styles.underline}>se debe mantener paralela en ambos moldes</span> y para eso agarramos <span className={styles.underline}>el talle más largo para la línea central (43 cm)</span> de la cintura y ya hecho esto a agarramos la cuarta parte de nuestro contorno (23 cm) y trazamos el ancho. Ahora sí trazamos el ancho de ambos rectángulos, pero antes <span className={styles.underline}>nos fijamos qué cada             rectángulo tanto el que va a ser el trasero como el delantero tenga sus medidas correspondientes en altura (o sea, las del talle delantero y el talle trasero)</span>.
@@ -151,7 +162,56 @@ export default function MoldeBase() {
             <li>Utilizamos la línea del alto de caída de hombro delantera (5cm)</li>
             <li>Para la altura de la línea de referencia usamos el alto de sisa</li>
           </ul>
-          
+          <div className={styles.measureNote}>
+            <Table
+              headers={['Medida', 'Valor (cm)']}
+              rows={[
+                ['Ancho espalda', '92'],
+                ['Alto sisa', '21']
+              ]}
+            />
+            <div className={styles.calculationGroup}>
+              <span className={styles.fraction}>
+                <span className={styles.numerator}>36</span>
+                <span className={styles.denominator}>2</span>
+              </span>
+              <span className={styles.equals}>=</span>
+              <span>18cm</span>
+            </div>
+          </div>
+          <div className={styles.baseRectangles}>
+            <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.line} data-type="green-to-purple"></div>
+                <div className={styles.line} data-type="horizontal-guide-left"></div>
+                <div className={styles.measureLabel} data-type="horizontal-guide-left">18 cm</div>
+                <div className={styles.line} data-type="vertical-guide-left"></div>
+                <div className={styles.line} data-type="vertical-arrow-left"></div>
+                <span className={styles.measureLabel} data-type="vertical-arrow-left">21cm</span>
+                <div className={styles.point} data-type="green"></div>
+                <div className={styles.point} data-type="purple"></div>
+                <div className={styles.line} data-type="green"></div>
+                <div className={styles.line} data-type="purple"></div>
+                <div className={styles.point} data-type="red"></div>
+                <div className={styles.line} data-type="red"></div>
+              </div>
+            </div>
+                        
+            <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.line} data-type="blood"></div>
+                <div className={styles.line} data-type="blue"></div>
+                <div className={styles.line} data-type="horizontal-guide-right"></div>
+                <div className={styles.measureLabel} data-type="horizontal-guide-left">18 cm</div>
+                <div className={styles.line} data-type="vertical-guide-right"></div>
+                <div className={styles.line} data-type="vertical-arrow-right"></div>
+                <span className={styles.measureLabel} data-type="vertical-arrow-right">21cm</span>
+                <div className={styles.line} data-type="blood-curve-right"></div>
+                <div className={styles.point} data-type="blood"></div>
+                <div className={styles.point} data-type="blue"></div>
+              </div>
+            </div>
+          </div>
           <div className={styles.alert}>
             <strong>Importante:</strong> La medida del ancho de espalda (36cm) se divide en dos partes iguales (18cm cada una) y se aplica simétricamente desde el centro hacia los costados, tanto en la parte trasera como en la delantera.
           </div>

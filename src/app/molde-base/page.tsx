@@ -214,6 +214,25 @@ export default function MoldeBase() {
           <p className={styles.diagramDescription}>
             En el cuadrado que se forma por el cruce de ambas líneas  vamos a trabajar un <span className={styles.underline}>punto de referencia este será la mitad de ese cuadrado.</span> Luego uniremos el punto del borde superior de la curva del cuello hacia el punto de referencia en la mitad del cuadrado marcando otra línea con <span className={styles.underline}>la medida del ancho de hombro</span> en la parte delantera (en este caso 12cm)
           </p>
+          <div className={styles.baseRectangles}>
+          <div className={styles.rectangleContainer}>
+              <div className={styles.rectangle}>
+                <div className={styles.line} data-type="green-to-purple"></div>
+                <div className={styles.line} data-type="horizontal-guide-left"></div>
+                <div className={styles.line} data-type="vertical-guide-left"></div>
+                <div className={styles.point} data-type="green"></div>
+                <div className={styles.line} data-type="blue-to-purple"></div>
+                <div className={styles.measureLabel} data-type="blue-conn">12 cm</div>
+                <div className={styles.point} data-type="purple"></div>
+                <div className={styles.line} data-type="green"></div>
+                <div className={styles.line} data-type="purple"></div>
+                <div className={styles.point} data-type="red"></div>
+                <div className={styles.line} data-type="red"></div>
+                <div className={styles.point} data-type="blue-dot"></div>
+                <div className={styles.point} data-type="blue-dot-conn"></div>
+              </div>
+            </div>
+          </div>
           <div className={styles.alert}>
             <strong>Importante:</strong> La medida del ancho de espalda (36cm) se divide en dos partes iguales (18cm cada una) y se aplica simétricamente desde el centro hacia los costados, tanto en la parte trasera como en la delantera.
           </div>

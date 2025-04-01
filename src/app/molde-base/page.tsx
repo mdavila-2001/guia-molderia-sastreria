@@ -212,7 +212,7 @@ export default function MoldeBase() {
             </div>
           </div>
           <p className={styles.diagramDescription}>
-            En el cuadrado que se forma por el cruce de ambas líneas  vamos a trabajar un <span className={styles.underline}>punto de referencia este será la mitad de ese cuadrado.</span> Luego uniremos el punto del borde superior de la curva del cuello hacia el punto de referencia en la mitad del cuadrado marcando otra línea con <span className={styles.underline}>la medida del ancho de hombro</span> en la parte delantera (en este caso 12cm)
+            En el cuadrado que se forma por el cruce de ambas líneas  vamos a trabajar un <span className={styles.underline}>punto de referencia este será la mitad de ese cuadrado.</span> Luego uniremos el punto del borde superior de la curva del cuello hacia el punto de referencia en la mitad del cuadrado marcando otra línea con <span className={styles.underline}>la medida del ancho de hombro</span> en la parte delantera (en este caso 12cm).
           </p>
           <div className={styles.baseRectangles}>
           <div className={styles.rectangleContainer}>
